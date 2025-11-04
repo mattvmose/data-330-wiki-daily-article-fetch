@@ -1,14 +1,14 @@
 name: Wiki Featured Article Data
 on:
   schedule:
-    - cron: "*/60 * * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  log_weather:
+  log_wiki:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
